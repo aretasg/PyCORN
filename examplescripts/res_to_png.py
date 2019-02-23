@@ -811,9 +811,6 @@ styles = {'UV':{'color': '#1919FF', 'lw': 1.6, 'ls': "-", 'alpha':1.0},
 
 def main2():
 
-    # path = os.path.abspath(__file__)
-    # path, file = os.path.split(path)
-
     # determine if application is a script file or frozen exe
     if getattr(sys, 'frozen', False):
         application_path = os.path.dirname(sys.executable)
