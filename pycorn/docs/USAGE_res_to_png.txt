@@ -3,18 +3,23 @@
 ## Requirments
 
 * matplotlib
+* pycorn
 
 ## Features
 
-* res_to_png.py is a modified PyCORN utility to generate .png plots from .res files
-* It does not accept any arguments;
-* When run generates a png file for every .res file in the same directory as the res_to_png.py script.
-* Works with PyInstaller allowing res_to_png.py to be bundled and easily distrubuted to people not familiar with terminal/console.
+* res_to_png.py is a modified pycorn-bin.py script to generate .png plots from .res files;
+* The script was purposly designed having bundling with PyInstaller in mind for easy distribution and use for people not familiar with the command line interface;
+* It does not require any arguments;
+* When run, generates a png file for every .res file in the same directory as the res_to_png.py script.
 
 ## Example usage
 
 ```
 python res_to_png.py
+```
+or
+```
+pyinstaller -F -w res_to_png.py
 ```
 
 ## Known issues
