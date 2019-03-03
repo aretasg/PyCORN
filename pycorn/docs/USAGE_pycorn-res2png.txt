@@ -1,0 +1,27 @@
+# Create .png from .res files using PyCORN (adapted to work with pyinstaller)
+
+## Requirments
+
+* matplotlib
+* pycorn
+
+## Features
+
+* pycorn-res2png.py is a modified pycorn-bin.py script to generate .png plots from .res files;
+* The script was purposly designed having bundling with PyInstaller in mind for an easy distribution and use for people not familiar with the command line interface;
+* It does not require any arguments;
+* When run, generates a png file for every .res file in the same directory as the pycorn-res2png.py script.
+
+## Example usage
+
+```
+python pycorn-res2png.py
+```
+or
+```
+pyinstaller -F -w pycorn-res2png.py
+```
+
+## Known issues when using with PyInstaller
+
+On macOS when creating an executable using PyInstaller an error related to tkinter may be issued. Please refer to this [link](https://github.com/pyinstaller/pyinstaller/issues/3753) for a solution.
